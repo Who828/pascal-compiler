@@ -7,6 +7,7 @@
     <file path="/Parser.java" changelist="0daa1dd8-b50b-46c0-831a-cbb5a2540280" time="1360599801156" ignored="false" />
     <file path="/fragment.java" changelist="0daa1dd8-b50b-46c0-831a-cbb5a2540280" time="1360599288056" ignored="false" />
     <file path="/Source.java" changelist="0daa1dd8-b50b-46c0-831a-cbb5a2540280" time="1360600976316" ignored="false" />
+    <file path="/Scanner.java" changelist="0daa1dd8-b50b-46c0-831a-cbb5a2540280" time="1360603577680" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +77,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Source.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Source.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/wci/frontend/Source.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0960912">
+            <state line="62" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/wci/frontend/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="4" selection-start="692" selection-end="692" vertical-scroll-proportion="0.90686274">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,6 +110,7 @@
         <option value="$PROJECT_DIR$/frontend/src/Parser.java" />
         <option value="$PROJECT_DIR$/frontend/src/wci/frontend/Parser.java" />
         <option value="$PROJECT_DIR$/frontend/src/wci/frontend/Source.java" />
+        <option value="$PROJECT_DIR$/frontend/src/wci/frontend/Scanner.java" />
       </list>
     </option>
   </component>
@@ -403,10 +414,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/wci/frontend/Source.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0960912">
+        <state line="62" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/wci/frontend/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="692" selection-end="692" vertical-scroll-proportion="0.90686274">
+          <folding />
         </state>
       </provider>
     </entry>
