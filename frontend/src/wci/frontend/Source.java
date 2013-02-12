@@ -1,14 +1,17 @@
 package wci.frontend;
 
+import wci.message.*;
+import static  wci.message.MessageType.SOURCE_LINE;
 import java.io.BufferedReader;
 import java.io.IOException;
 
 
-public class Source {
+public class Source implements MessageProducer {
     public static final char EOL = '\n';
     public static final char EOF = (char) 0;
 
     private BufferedReader reader;
+    private MessageHandler messageHandler;
     private String line;
     private int lineNum;
     private int currentPos;
@@ -19,6 +22,22 @@ public class Source {
         this.lineNum = 0;
         this.currentPos = -2;
         this.reader = reader;
+        this.messageHandler = new MessageHandler();
+    }
+
+    public void addMessageListener(MessageListener listener)
+    {
+        messageHandler.addListener(listener);
+    }
+
+    public void removeMessageListener(MessageListener listener)
+    {
+        messageHandler.removeListener(listener);
+    }
+
+    public void sendMessage(Message message)
+    {
+        messageHandler.sendMessage(message);
     }
 
     public char currentChar()
@@ -75,6 +94,10 @@ public class Source {
 
         if (line != null) {
             ++lineNum;
+        }
+
+        if (line != null) {
+            sendMessage(new Message(SOURCE_LINE, new Object[] {lineNum, line}));
         }
     }
 
